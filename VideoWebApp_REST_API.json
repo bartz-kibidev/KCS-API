@@ -1,0 +1,637 @@
+{
+  "front-version": "2.17.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "description": "",
+      "id": "3d09b3f9-766a-4069-b822-52e4af7806e3",
+      "importedFrom": "8e13225b-9568-4f8b-a61a-461e2a558a9b",
+      "lastModified": "2018-04-06T16:31:03.465+02:00",
+      "name": "VideoWebApp REST API",
+      "remoteModification": "2018-04-06T14:31:04.392Z"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Capture/UserInformation"
+      },
+      "description": "Get a user friendly description of a resource.",
+      "id": "0fbb49c6-6d61-4dda-bdff-48492b598c75",
+      "lastModified": "2018-04-05T10:01:56.821+02:00",
+      "name": "GET /Capture/UserInformation",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Health"
+      },
+      "description": "get the Health status report",
+      "id": "3f773a67-d895-4582-8bb7-15fdd62d03dc",
+      "lastModified": "2018-04-05T10:01:56.821+02:00",
+      "name": "GET /Health",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost",
+        "path": "/videowebapp/KibiVideoEditor"
+      },
+      "description": "List all settings of this API",
+      "id": "4f326e23-d0ab-4a1e-9608-3104ccaad219",
+      "lastModified": "2018-04-05T10:52:43.282+02:00",
+      "name": "GET /Viewer/Open/Settings",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/UserInformation"
+      },
+      "description": "Get a user friendly description of a resource.",
+      "id": "5817a88f-86e6-4a2e-a11b-4d67195c6466",
+      "lastModified": "2018-04-05T10:01:56.821+02:00",
+      "name": "GET /Viewer/UserInformation",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "documentID",
+              "value": "EI_US-2.1.2af4e309-b42e-4723-8ac2-c6f8ca8e9942"
+            },
+            {
+              "enabled": true,
+              "name": "fileID",
+              "value": "0"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Capture/Open"
+      },
+      "description": "get HTML page containing the video recording controls and live player",
+      "id": "5e940df2-449b-4851-99ce-306f2712d145",
+      "lastModified": "2018-04-05T10:01:56.822+02:00",
+      "name": "GET /Capture/Open?documentID=EI_US-2.1.2af4e309-b42e-4723-8ac2-c6f8ca8e9942&fileID=0",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Scenario",
+      "description": "Unit test for autoplay setting in video web app\n",
+      "id": "77023bf7-6145-4d89-9bab-ffe51d3d78c5",
+      "lastModified": "2018-04-06T14:00:23.341+02:00",
+      "name": "AutoPlay Scenario JSON",
+      "requestOrder": [
+        "Get Viewer Settings",
+        "Get Autoplay Setting",
+        "Put new Autoplay Setting"
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings"
+      },
+      "description": "List all settings of this API",
+      "id": "38a5b442-b74a-433c-a3d6-94e849402d34",
+      "lastModified": "2018-04-05T14:39:33.294+02:00",
+      "name": "Get Viewer Settings",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "77023bf7-6145-4d89-9bab-ffe51d3d78c5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings/Autoplay"
+      },
+      "description": "get the value of this setting or a HTML page to set the or upload the JSON document with values",
+      "id": "5d80fdd2-f8a5-4b26-8cb6-22fd1b576f82",
+      "lastModified": "2018-04-05T14:47:30.820+02:00",
+      "name": "Get Autoplay Setting",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": ""
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "77023bf7-6145-4d89-9bab-ffe51d3d78c5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "",
+        "name": "PUT"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "textBody": "true"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings/Autoplay"
+      },
+      "description": "set the new value",
+      "id": "c3f3c817-5bb6-44e5-9b6d-422667877b2f",
+      "lastModified": "2018-04-05T15:03:51.308+02:00",
+      "name": "Put new Autoplay Setting",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": ""
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "77023bf7-6145-4d89-9bab-ffe51d3d78c5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings/Autoplay"
+      },
+      "description": "get the value of this setting or a HTML page to set the or upload the JSON document with values",
+      "id": "83d46a3c-bf33-4cb0-9af0-39f86c075074",
+      "lastModified": "2018-04-05T10:01:56.821+02:00",
+      "name": "GET /Viewer/Open/Settings/Autoplay",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": ""
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Settings"
+      },
+      "description": "List all settings of this API",
+      "id": "aca2e44c-5e80-4f35-8b44-d88357721d14",
+      "lastModified": "2018-04-05T10:01:56.821+02:00",
+      "name": "GET /Settings",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Scenario",
+      "description": "These tests should fail as Autoplay should only normally accept a json ",
+      "id": "b1f31224-a99e-416b-bb91-60f8162ce637",
+      "lastModified": "2018-04-05T15:06:31.320+02:00",
+      "name": "Autoplay HTML",
+      "requestOrder": [
+        "Copy of Get Viewer Settings",
+        "Copy of Get Autoplay Setting",
+        "Copy of Put new Autoplay Setting"
+      ],
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "name": "editMode",
+              "value": "true"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost",
+        "path": "/videowebapp/Viewer/Open/Settings/Autoplay"
+      },
+      "description": "get the value of this setting or a HTML page to set the or upload the JSON document with values",
+      "id": "2a2b8789-ebaf-4d02-ad28-f288a0b93d62",
+      "lastModified": "2018-04-06T16:31:03.001+02:00",
+      "name": "Copy of Get Autoplay Setting",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": ""
+        },
+        {
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "b1f31224-a99e-416b-bb91-60f8162ce637"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings"
+      },
+      "description": "List all settings of this API",
+      "id": "b78b4f5d-27be-43ba-b0d9-27a8ce0d21eb",
+      "lastModified": "2018-04-05T14:48:00.745+02:00",
+      "name": "Copy of Get Viewer Settings",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "b1f31224-a99e-416b-bb91-60f8162ce637"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "",
+        "name": "PUT"
+      },
+      "body": {
+        "bodyType": "Text",
+        "textBody": "\"false\""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings/Autoplay"
+      },
+      "description": "set the new value",
+      "id": "c805bd1f-6b8b-4f87-b7b8-5895a85c41fd",
+      "lastModified": "2018-04-05T15:05:11.313+02:00",
+      "name": "Copy of Put new Autoplay Setting",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/html"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": ""
+        }
+      ],
+      "assertions": [],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "b1f31224-a99e-416b-bb91-60f8162ce637"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "",
+        "name": "PUT"
+      },
+      "body": {
+        "bodyType": "Text",
+        "textBody": ""
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open/Settings/Autoplay"
+      },
+      "description": "set the new value",
+      "id": "df07772d-9fe4-4706-b557-853a62e81ea0",
+      "lastModified": "2018-04-05T10:07:45.866+02:00",
+      "name": "PUT /Viewer/Open/Settings/Autoplay",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": ""
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/plain"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "documentID",
+              "value": "EI_US-2.1.2af4e309-b42e-4723-8ac2-c6f8ca8e9942"
+            },
+            {
+              "enabled": true,
+              "name": "fileID",
+              "value": "2"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "localhost/videowebapp/Viewer/Open"
+      },
+      "description": "get HTML page containing the player setup for video streaming",
+      "id": "e3cf5cee-4124-454f-986c-f2fd90d7bfdc",
+      "lastModified": "2018-04-05T14:11:41.183+02:00",
+      "name": "GET /Viewer/Open?documentID=EI_US-2.1.2af4e309-b42e-4723-8ac2-c6f8ca8e9942&fileID=0",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "text/html"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5ab8c03ec8f92d51e6af1d7e"
+      },
+      "parentId": "3d09b3f9-766a-4069-b822-52e4af7806e3"
+    },
+    {
+      "type": "Context",
+      "id": "8e46673f-ea5e-46c2-a733-e0315cc59140",
+      "lastModified": "2018-04-03T16:47:37.399+02:00",
+      "name": "Test",
+      "variables": [
+        {
+          "enabled": true,
+          "name": "",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}
